@@ -40,7 +40,7 @@ In case some of the files need to be recreated, here are the formatting tweaks w
   document.querySelector('style').textContent = " \
     @media print { \
       @page { size: Letter; margin: 1in 0; } \
-      html { --zoomFactor: 0.8; zoom: var(--zoomFactor); } \
+      html { --zoomFactor: 0.8; } \
       html, body, #__next { background-color: #fff; } \
       tr, p:empty, li:empty, h1, h2, h3, h4, h5, h6 { page-break-inside: avoid; } \
       p::before, h1::before, h2::before, h3::before, h4::before, h5::before, h6::before { content: ''; display: block; height: 3px; margin-top: -3px; } \
@@ -53,7 +53,7 @@ In case some of the files need to be recreated, here are the formatting tweaks w
       main.news-article .article-content > .headline-wrapper > .title { margin: 10px 0 0; } \
       main.news-article > .bottom-wrapper { background-color: unset; } \
       main.news-article > .bottom-wrapper > .article-content { background-color: unset; } \
-      main.news-article > .news-article-header { height: calc(8.5in / var(--zoomFactor) / 2.4 + 4px); border-top-width: 4px; border-top-style: solid; } \
+      main.news-article > .news-article-header { height: calc(8.5in / var(--zoomFactor) / (1920 / 800) + 4px); border-top-width: 4px; border-top-style: solid; } \
       main.news-article > .news-article-header > div.hero-mobile { background-size: cover; image-rendering: optimizequality; } \
     }"
   ```
