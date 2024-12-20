@@ -59,4 +59,4 @@ In case some of the files need to be recreated, here are the formatting tweaks w
   ```
 </details>
 
-The resulting files have then been [compressed](https://www.sejda.com/compress-pdf) at 288 dpi with image quality "Good" and source URLs have been [added to PDF metadata](https://www.sejda.com/edit-pdf-metadata).
+The resulting files have then been [compressed](https://www.sejda.com/compress-pdf) at 200 ppi with image quality "Good" and source URLs have been [added to PDF metadata](https://www.sejda.com/edit-pdf-metadata).
