@@ -29,7 +29,7 @@ In case some of the files need to be recreated, here are the formatting tweaks w
   ```
 </details>
 <details>
-  <summary>6.5+ & Aion Classic</summary>
+  <summary>6.5+ & Aion Classic until August 2025 (aiononline.com)</summary>
 
   Source: https://www.aiononline.com/news/  
   Set to 80% zoom before printing.  
@@ -55,6 +55,30 @@ In case some of the files need to be recreated, here are the formatting tweaks w
       main.news-article > .bottom-wrapper > .article-content { background-color: unset; } \
       main.news-article > .news-article-header { height: calc(8.5in / var(--zoomFactor) / (1920 / 800) + 4px); border-top-width: 4px; border-top-style: solid; } \
       main.news-article > .news-article-header > div.hero-mobile { background-size: cover; image-rendering: optimizequality; } \
+    }"
+  ```
+</details>
+<details>
+  <summary>Aion Classic since August 2025 (aiononline.plaync.com)</summary>
+
+  Source: https://aiononline.plaync.com/en-us/board/classicnotice/list  
+  Set to 80% zoom before printing.  
+
+  ```js
+  for (let img of document.getElementsByTagName('img')) { if (img.style.height) { img.style.setProperty('height', img.style.height, 'important') } }
+  document.head.appendChild(document.createElement('style'))
+  document.querySelector('style').textContent = " \
+    @media print { \
+      @page { size: Letter; margin: 1in 0; } \
+      html { --zoomFactor: 0.8; } \
+      html, body, #__next { background-color: #fff; } \
+      tr, p:empty, li:empty, h1, h2, h3, h4, h5, h6 { page-break-inside: avoid; } \
+      p::before, h1::before, h2::before, h3::before, h4::before, h5::before, h6::before { content: ''; display: block; height: 3px; margin-top: -3px; } \
+      \
+      td > p, th > p { margin: 0; } \
+      #nc-cnb, .wrap-header, .util-btn-wrap, #footer, .view-bottom, .wrap-btn-top {display: none;} \
+      .view-body .fr-toc ol > li, .view-body .fr-toc ol > li > ol > li { margin: 0 !important; } \
+      .view-body table { white-space: normal; } \
     }"
   ```
 </details>
