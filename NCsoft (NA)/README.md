@@ -1,4 +1,4 @@
-Most PDFs were created manually from official web articles, since NCSoft only provided PDFs from version 3.5 to 6.2.  
+Most PDFs were created manually from official web articles because NCsoft only provided PDFs from versions 3.5 to 6.2.  
 Articles about minor updates consisting only of language corrections and bug fixes have not been converted to PDF.  
 
 In case some of the files need to be recreated, here are the formatting tweaks which have been applied to the page prior to "printing" with Firefox via `Print..` > `Save as PDF...`:  
